@@ -12,4 +12,5 @@ type Opening struct {
 	Link string
 	Salary int64
 	Remote bool
+	IsActived bool
 }
