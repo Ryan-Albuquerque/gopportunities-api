@@ -8,7 +8,7 @@ func Initialize() {
 
 	r := gin.Default()
 
-	initializeRoutes(r)
+	initializeOpeningRoutes(r)
 
 	r.Run()
 }
