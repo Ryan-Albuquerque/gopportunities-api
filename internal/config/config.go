@@ -51,5 +51,9 @@ func Init() error {
 
 // GetDB returns the database instance
 func GetDB() *gorm.DB {
+	if db == nil {
+		config.LogError("DB", "database connection is not initialized")
+		Init()
+	}
 	return db
 }
